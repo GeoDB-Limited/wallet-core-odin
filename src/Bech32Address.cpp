@@ -34,7 +34,8 @@ bool Bech32Address::isValid(const std::string& addr, const std::string& hrp) {
     return true;
 }
 
-bool Bech32Address::decode(const std::string& addr, Bech32Address& obj_out, const std::string& hrp) {
+bool Bech32Address::decode(const std::string& addr, Bech32Address& obj_out,
+                           const std::string& hrp) {
     auto dec = Bech32::decode(addr);
     // check hrp prefix (if given)
     if (hrp.length() > 0 && std::get<0>(dec).compare(0, hrp.length(), hrp) != 0) {
@@ -55,8 +56,10 @@ bool Bech32Address::decode(const std::string& addr, Bech32Address& obj_out, cons
     return true;
 }
 
-Bech32Address::Bech32Address(const std::string& hrp, Hash::Hasher hasher, const PublicKey& publicKey)
-: hrp(hrp) {
+Bech32Address::Bech32Address(const std::string& hrp, Hash::Hasher hasher,
+                             const PublicKey& publicKey)
+    : hrp(hrp) {
+
     bool skipTypeByte = false;
     // Extended-key / keccak-hash skips first byte (Evmos)
     if (publicKey.type == TWPublicKeyTypeSECP256k1Extended || hasher == Hash::HasherKeccak256) {
