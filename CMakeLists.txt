@@ -38,6 +38,8 @@ if (TW_COMPILE_WASM)
     add_subdirectory(wasm)
 endif ()
 
+set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} /opt/homebrew/Cellar/boost/1.81.0_1/lib)
+
 find_host_package(Boost REQUIRED)
 
 include(ExternalProject)
