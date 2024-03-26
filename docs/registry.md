@@ -108,6 +108,9 @@ This list is generated from [./registry.json](../registry.json)
 | 10000100 | Gnosis Chain     | xDAI   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/xdai/info/logo.png" width="32" />         | <https://www.xdaichain.com>   |
 | 10000118 | Osmosis          | OSMO   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/osmosis/info/logo.png" width="32" />      | <https://osmosis.zone/>       |
 | 10000119 | Odin             | ODIN   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/odin/info/logo.png" width="32" />         | <https://odinprotocol.io/>    |
+| 10000120 | Doki             | Doki   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/doki/info/logo.png" width="32" />         | <https://odinprotocol.io/>    |
+| 10000121 | MYRK             | MYRK   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/myrk/info/logo.png" width="32" />         | <https://odinprotocol.io/>    |
+| 10000122 | O9W              | O9W    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/o9w/info/logo.png" width="32" />          | <https://odinprotocol.io/>    |
 | 10000145 | Smart Bitcoin Cash | BCH    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartbch/info/logo.png" width="32" />     | <https://smartbch.org/>       |
 | 10000250 | Fantom           | FTM    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/fantom/info/logo.png" width="32" />       | <https://fantom.foundation>   |
 | 10000288 | Boba             | BOBAETH | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/boba/info/logo.png" width="32" />         | <https://boba.network/>       |

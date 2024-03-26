@@ -31,6 +31,13 @@ $ ./tools/geodb-android-release
 After running more or less those commands, that last release script should
 generate a `dist-android` directory containing a zip file with the contained
 files. You can upload this file somewhere or include directly into a project.
+If you are recompiling this after system/brew updates, it may be possible for
+you to run the following cleaning command before the `bootstrap.sh` command to
+avoid previously generated files from preventing compilation.
+
+```
+$ find . -type d -name build -exec rm \{\} \;
+```
 
 
 ## Compiling Swift frameworks
