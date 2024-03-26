@@ -12,13 +12,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WalletCore",
-            url: "https://github.com/GeoDB-Limited/wallet-core-odin/releases/download/sync_240221_v4.0.24_2/WalletCore.xcframework.zip",
-            checksum: "28ce134dab2685ee2a70a5f4135b310a4c91f4f72447fb70441231e41b9a5580"
+            url: "https://github.com/GeoDB-Limited/wallet-core-odin/releases/download/sync_240221_v4.0.24_3/WalletCore.xcframework.zip",
+            checksum: "607de0187f0d859fc181368ade244d9c05804766715dfbfd597eaaaa5c84787d"
         ),
         .binaryTarget(
             name: "SwiftProtobuf",
-            url: "https://github.com/GeoDB-Limited/wallet-core-odin/releases/download/sync_240221_v4.0.24_2/SwiftProtobuf.xcframework.zip",
-            checksum: "c722f6d8e9da3e372c6c34a97fce62eb86dc236435a54ed544d6799e543560c5"
+            url: "https://github.com/GeoDB-Limited/wallet-core-odin/releases/download/sync_240221_v4.0.24_3/SwiftProtobuf.xcframework.zip",
+            checksum: "3818eb762fa85517737b6cf615916d5e1b47927055d1d91dff3096058db02f60"
         )
     ]
 )
