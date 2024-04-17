@@ -21,6 +21,7 @@ $ brew install cmake boost ruby ninja autoconf automake libtool
 $ brew install xcodegen clang-format ccache cocoapods xcbeautify
 $ brew install jq fastlane rustrustup-init
 $ rustup-init
+$ ./tools/install-dependencies
 $ ./bootstrap.sh
 $ ./tools/install-wasm-dependencies
 $ source emsdk/emsdk_env.sh
