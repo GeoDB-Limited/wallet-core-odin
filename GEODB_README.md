@@ -47,7 +47,13 @@ Due to [homebrew path being
 hardcoded](https://github.com/trustwallet/wallet-core/issues/3695) you may need
 to modify both `swift/common-xcframework.yml` and `swift/project.yml` to point
 to whatever path is mentioned in `swift/cpp.xcconfig` before running any
-commands.
+commands. Note that the change is a bit _tricky_: the `swift/cpp.xcconfig` file
+will have two variables, `HEADER_SEARCH_PATHS` and
+`SYSTEM_HEADER_SEARCH_PATHS`, and your local boost include path will be in
+`HEADER_SEARCH_PATHS`. However, when you modify the `.yml` files, you need to
+add your local boost include path to `SYSTEM_HEADER_SEARCH_PATHS` instead, or
+you may confuse the build with brew versions of Google protobufs and whatever
+else.
 
 In any case, run the same commands as for Android but change the last
 `tools/geodb-android-release` to:
